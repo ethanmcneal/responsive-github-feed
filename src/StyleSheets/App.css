@@ -1,3 +1,177 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #1C2127;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.nav{
+    width: 100%;
+    background-color: #2D333B; 
+    height: 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.page {
+    color: #C5D0DC;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+@media(max-width: 769px){
+    .page {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+       
+        align-items: center;
+    
+    }
+    .content-container, .repo-card{
+        display: flex;
+        width: 95%;
+        height: fit-content;
+        background-color: #2D333B;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 20px 0;
+        border: .5px solid #434B55;
+    }
+}
+@media(min-width: 770px){
+    .content {
+        color: #C5D0DC;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    
+    }
+    .repositories{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100vh;
+        width: 45%;
+        background-color: #22272E;
+        justify-self: flex-start;
+        align-items: center;
+    }
+    .content-container {
+        width: 90%;
+    }
+    .repo-card{
+        background-color: #2D333B;
+        border: .5px solid #434B55;
+        border-radius: 8px;
+
+
+    }
+    .activity{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+
+
+
+.repo-searchbar{
+    width:90% ;
+    padding: 10px 12px;
+    background-color: #1C2127;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #434B55;
+    
+}
+
+ ::placeholder {
+    color: #545D68;
+}
+
+.show-more{
+    width: 90%;
+    padding: 16px 8px;
+    border-top: 1px solid #444C57;
+    margin-top: 20px;
+}
+
+.subtitle{
+    text-align: left;
+    width: 95%;
+    padding: 10px;
+}
+
+.repo {
+    display: flex;
+    width: 97%;
+    text-align: left;
+    align-items: center;
+    margin: 8px 0 0;
+}
+
+.repo svg {
+    margin: 0 8px 0 0;
+    /* height: 16px; */
+    /* width: 16px; */
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+
+}
+
+#activity-info{
+    color: #768390;
+    font-size: smaller;
+    padding: 12px;
+}
+
+.activity-card{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #444C57;
+    padding: 10px 0;
+}
+
+.repo-card {
+    display: flex;
+ flex-direction: row;
+ align-self: flex-end;
+ justify-content: space-between;
+ width: 85%;
+ padding: 5px 20px;
+
+}
+
+.repo-card-left{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.title{
+    flex-direction: column;
 }
