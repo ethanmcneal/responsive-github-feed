@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesheets/App.css";
+import "./StyleSheets/App.css";
 import { BiUserCircle, BiMenu } from "react-icons/bi";
 import { BsBell, BsGithub } from "react-icons/bs";
 
